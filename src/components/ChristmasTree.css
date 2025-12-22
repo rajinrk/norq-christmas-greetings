@@ -1,5 +1,4 @@
-.tree-container {
-  position: absolute;
+.tree-container {  position: absolute;
   right: 5%;
   z-index: 10;
   position: absolute;
@@ -54,6 +53,12 @@
   background: radial-gradient(circle, #ffd700 0%, #ff6b6b 100%);
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
   pointer-events: none;
+}
+
+@media (max-width: 1400px) {
+  .tree-container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
