@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Snowfall from './components/Snowfall';
 import Stars from './components/Stars';
@@ -9,7 +9,6 @@ import ChristmasDay from './components/ChristmasDay';
 import confetti from 'canvas-confetti';
 import './App.css';
 import { defaultValues } from './constants';
-import Comet from './components/comet';
 import crackersSound from './assets/firework.mp3';
 
 /**
