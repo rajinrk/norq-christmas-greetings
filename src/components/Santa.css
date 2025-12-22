@@ -1,5 +1,4 @@
-.santa-container {
-  position: absolute;
+.santa-container {  position: absolute;
   top: 40%;
   left: 4%;
   z-index: 10;
@@ -50,6 +49,7 @@
 
 @media (max-width: 768px) {
   .santa-container {
+    display: 'none';
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);

@@ -1,5 +1,4 @@
-.tree-container {
-  position: absolute;
+.tree-container {  position: absolute;
   right: 5%;
   z-index: 10;
   position: absolute;
@@ -61,6 +60,7 @@
     bottom: 2%;
     right: 50%;
     transform: translateX(50%);
+    display: 'none';
   }
 
   .tree-image {
