@@ -1,0 +1,66 @@
+.santa-container {
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  z-index: 10;
+  transform: translateY(-40%);
+}
+
+.santa-image-wrapper {
+  position: relative;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+}
+
+.santa-image {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 2px solid rgb(245, 253, 8);
+}
+
+.santa-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .santa-container {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .santa-image {
+    width: 150px;
+  }
+
+  .santa-glow {
+    width: 180px;
+    height: 180px;
+  }
+}

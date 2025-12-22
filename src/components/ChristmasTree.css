@@ -1,0 +1,74 @@
+.tree-container {
+  position: absolute;
+  right: 5%;
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.tree-image-wrapper {
+  position: relative;
+  filter: drop-shadow(0 0 30px rgba(249, 115, 81, 0.4));
+}
+
+.tree-image {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 2px solid rgb(245, 253, 8);
+  background: transparent;
+}
+
+.tree-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 255, 0, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: treePulse 3s ease-in-out infinite;
+}
+
+@keyframes treePulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+}
+
+.tree-light {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd700 0%, #ff6b6b 100%);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .tree-container {
+    bottom: 2%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .tree-image {
+    width: 180px;
+  }
+
+  .tree-glow {
+    width: 220px;
+    height: 220px;
+  }
+}
