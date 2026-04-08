@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';import { motion, AnimatePresence } from 'framer-motion';
 import Snowfall from './components/Snowfall';
 import Stars from './components/Stars';
 import Santa from './components/Santa';
@@ -17,6 +16,8 @@ import crackersSound from './assets/firework.mp3';
  * Before Christmas: Shows countdown with festive scene
  * On Christmas Day: Shows celebration with games
  */
+
+// test
 const App = () => {
   const [isChristmasDay, setIsChristmasDay] = useState(false);
   const [celebrationTriggered, setCelebrationTriggered] = useState(false);
